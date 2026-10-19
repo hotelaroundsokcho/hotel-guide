@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E6EAED">
+<title>호텔어라운드 속초 · 오늘의 가이드</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="guide.css?v=20261016i">
+</head>
+<body>
+
+<div class="lang-bar">
+  <button class="lpill on" onclick="setLang('ko')">한국어</button>
+  <button class="lpill" onclick="setLang('en')">English</button>
+  <button class="lpill" onclick="setLang('zh')">中文</button>
+</div>
+<div class="status-bar" id="statusBar"><span class="status-dot"></span><span id="statusText"></span></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="mono">HotelAround Sokcho</span><b>호텔어라운드 속초</b></div>
+    <div class="eyebrow mono"><span data-ko="">Today · 오늘의 체크인</span><span data-en="">Today · Check-in day</span><span data-zh="">Today · 今日入住</span></div>
+    <h1 class="headline kw"><span data-ko="">줄 서지 않고,<br>곧장 객실로.</span><span data-en="">No queue.<br>Straight to<br>your room.</span><span data-zh="">无需排队，<br>直接入住<br>客房。</span></h1>
+    <p class="hero-sub kw"><span data-ko="">체크인은 휴대폰으로, 입실은 번호 하나로.</span><span data-en="">Check in on your phone. Enter with one code.</span><span data-zh="">用手机办理入住，凭一组密码入住客房。</span></p>
+
+    <section class="must" aria-labelledby="must-t">
+      <h2 id="must-t" class="kw"><span data-ko="">모바일 체크인을 마치면,<br>번호가 도착합니다.</span><span data-en="">Finish mobile check-in,<br>and your door code arrives.</span><span data-zh="">完成手机入住后，<br>门锁密码将发送给您。</span></h2>
+      <a class="btn" id="checkinBtn" href="https://hotelaroundsokcho.github.io/hotel-checkin/" data-base="https://hotelaroundsokcho.github.io/hotel-checkin/" target="_blank" rel="noopener"><span><span data-ko="">모바일 체크인 하기</span><span data-en="">Start mobile check-in</span><span data-zh="">开始手机入住</span></span><span aria-hidden="true">→</span></a>
+      <p class="note"><span data-ko="">모바일 체크인은 체크인 당일부터 가능합니다.</span><span data-en="">Mobile check-in is available from your check-in day.</span><span data-zh="">手机入住自入住当天起开放。</span></p>
+    </section>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="sec" aria-labelledby="steps-t">
+    <div class="mono sec-label">Check-in</div>
+    <h2 class="sec-title kw" id="steps-t"><span data-ko="">천천히 세 걸음</span><span data-en="">Three steps, no rush</span><span data-zh="">三步，慢慢来</span></h2>
+    <ol class="steps">
+      <li><span class="n" aria-hidden="true">1</span><div>
+        <h3><span data-ko="">정확한 정보를 입력합니다</span><span data-en="">Enter your details accurately</span><span data-zh="">请准确填写信息</span></h3>
+        <p class="kw"><span data-ko="">투숙객 정보와 차량번호를 입력해 주세요. <strong>호텔에서 주차 여부를 문자 메시지로 알려드립니다.</strong></span><span data-en="">Enter guest details and your car number. <strong>The hotel will let you know about parking availability by text message.</strong></span><span data-zh="">请填写住客信息和车牌号。<strong>酒店会通过短信告知您停车场是否可用。</strong></span></p></div></li>
+      <li><span class="n" aria-hidden="true">2</span><div>
+        <h3><span data-ko="">객실번호/비밀번호를 받습니다</span><span data-en="">Receive your room number and code</span><span data-zh="">收到房间号和密码</span></h3>
+        <p class="kw"><span data-ko="">체크인 완료 후 <strong>15:30부터</strong> 순차적으로 객실 번호와 키패드 비밀번호가 문자로 도착합니다. 예약자 휴대폰으로만 발송되니 동행분과 미리 공유해 두세요.</span><span data-en="">After check-in, your room number and keypad code are sent by text in order, <strong>from 3:30 PM</strong>. They go only to the booker’s phone — share them with your companions in advance.</span><span data-zh="">入住登记完成后，<strong>从15:30起</strong>陆续通过短信发送房间号和门锁密码。仅发送至预订人手机，请提前与同行人共享。</span></p></div></li>
+      <li><span class="n" aria-hidden="true">3</span><div>
+        <h3><span data-ko="">문 앞에서 천천히 누릅니다</span><span data-en="">Press it slowly at your door</span><span data-zh="">在门前慢慢输入</span></h3>
+        <p class="kw"><span data-ko="">키패드에 비밀번호를 누른 뒤 <span class="hashkey">#</span> 을 눌러 주세요. 번호가 보이지 않으면 예약자 휴대폰의 문자부터 확인해 주세요.</span><span data-en="">Enter the keypad code, then press <span class="hashkey">#</span>. If you can’t find it, check the text messages on the booker’s phone first.</span><span data-zh="">在门锁上输入密码，最后按 <span class="hashkey">#</span> 键。若找不到密码，请先查看预订人手机的短信。</span></p></div></li>
+    </ol>
+    <div class="keypad" aria-hidden="true">
+      <div class="kp-screen"><i></i><i></i><i></i><i></i></div>
+      <div class="kp-grid"><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b><b>*</b><b>0</b><b class="hash">#</b></div>
+      <div class="kp-cap">CODE + #</div>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="time">
+    <div class="mono sec-label">Arrival &amp; Departure</div>
+    <div class="time-row">
+      <div class="tc"><span class="tc-label"><span data-ko="">체크인</span><span data-en="">Check-in</span><span data-zh="">入住</span></span><div class="tc-time">16:00</div><div class="tc-note"><span data-ko="">오후 4시 이후</span><span data-en="">From 4:00 PM</span><span data-zh="">下午4点起</span></div></div>
+      <div class="tc"><span class="tc-label"><span data-ko="">체크아웃</span><span data-en="">Check-out</span><span data-zh="">退房</span></span><div class="tc-time">11:00</div><div class="tc-note"><span data-ko="">오전 11시까지, 문자 링크로 모바일 진행</span><span data-en="">By 11:00 AM, via the text link</span><span data-zh="">上午11点前，通过短信链接办理</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-label="parking">
+    <div class="mono sec-label">Parking</div>
+    <h2 class="sec-title kw"><span data-ko="">주차는 문자로 안내합니다</span><span data-en="">Parking, by text message</span><span data-zh="">停车信息将通过短信告知</span></h2>
+    <details class="det">
+      <summary><span data-ko="">지하주차장 이용안내</span><span data-en="">Underground parking guide</span><span data-zh="">地下停车场使用指南</span></summary>
+      <div class="det-body kw">
+        <p data-ko="">지하주차장은 호텔어라운드와 마리비스타호텔이 공동으로 이용합니다. 주말·성수기에는 우리 호텔에 배정된 대수를 초과할 수 있으며, 초과 시 빈 자리가 보여도 저희 호텔 손님이 이용하실 수 있는 자리가 아닙니다.</p>
+        <p data-en="" style="display:none">The underground lot is shared with Marivista Hotel. On weekends and in peak season our allocation may be exceeded; if so, an empty-looking spot is not available for our guests.</p>
+        <p data-zh="" style="display:none">地下停车场与玛丽维斯塔酒店共同使用。周末及旺季分配给本酒店的车位可能被占满，此时即使看到空位，也并非本酒店客人可使用的车位。</p>
+        <p data-ko="">이용이 어려운 경우, 도보 5~6분 거리의 <a href="https://naver.me/5M5sxNZs" target="_blank" rel="noopener">무료공영주차장 안내 ↗</a> 링크를 함께 보내드립니다. 짐은 지하주차장에서 먼저 내리신 후 이동해 주세요. 차량 회차는 90분입니다.</p>
+        <p data-en="" style="display:none">If unavailable, we also send a link to a <a href="https://naver.me/5M5sxNZs" target="_blank" rel="noopener">free public parking area ↗</a>, a 5–6 minute walk away. Please unload your luggage in the underground lot first. Repositioning takes about 90 minutes.</p>
+        <p data-zh="" style="display:none">如无法使用，我们还会附上步行5~6分钟可达的<a href="https://naver.me/5M5sxNZs" target="_blank" rel="noopener">免费公共停车场信息 ↗</a>链接。请先在地下停车场卸下行李再移动车辆。挪车时间为90分钟。</p>
+        <div class="w" data-ko="">안내 없이 임의로 주차하실 경우 주차요금이 발생할 수 있습니다.</div>
+        <div class="w" data-en="" style="display:none">Parking without guidance may result in parking fees.</div>
+        <div class="w" data-zh="" style="display:none">如自行停放车辆，可能产生停车费用。</div>
+      </div>
+    </details>
+  </section>
+
+  <section class="sec" aria-label="in-room">
+    <div class="mono sec-label">In Your Room</div>
+    <h2 class="sec-title kw"><span data-ko="">입실 후 안내</span><span data-en="">After you settle in</span><span data-zh="">入住后须知</span></h2>
+
+    <details class="det">
+      <summary><span data-ko="">Wi-Fi · 난방 · 조명</span><span data-en="">Wi-Fi · Heating · Lights</span><span data-zh="">Wi-Fi · 暖气 · 灯光</span></summary>
+      <div class="det-body kw">
+        <p data-ko="">Wi-Fi 정보(네트워크명·비밀번호)는 <strong>모바일 체크인 완료 화면</strong>에서 확인하실 수 있습니다.</p><p data-en="" style="display:none">Wi-Fi details (network name and password) are shown on the <strong>mobile check-in completion screen</strong>.</p><p data-zh="" style="display:none">Wi-Fi信息（网络名称及密码）可在<strong>手机入住完成页面</strong>查看。</p>
+        <p data-ko="">조명은 <strong>벽면 스위치</strong>를 이용해 주세요. <strong>난방</strong>은 벽면 컨트롤러를 "ON"으로 설정한 뒤 온도를 조절합니다.</p>
+        <p data-en="" style="display:none">Use the <strong>wall switch</strong> for lighting. For <strong>heating</strong>, set the wall controller to "ON", then adjust the temperature.</p>
+        <p data-zh="" style="display:none">灯光请使用<strong>墙面开关</strong>。<strong>暖气</strong>请将墙面控制器设置为"ON"后调节温度。</p>
+        <div class="w" data-ko=""><strong>동절기(4월까지)에는 에어컨이 작동하지 않습니다.</strong></div>
+        <div class="w" data-en="" style="display:none"><strong>Air conditioning is not available in winter (until April).</strong></div>
+        <div class="w" data-zh="" style="display:none"><strong>冬季(至4月)空调不可使用。</strong></div>
+      </div>
+    </details>
+
+    <details class="det">
+      <summary><span data-ko="">타올 · 추가 침구</span><span data-en="">Towels · Extra bedding</span><span data-zh="">毛巾 · 加床</span></summary>
+      <div class="det-body kw">
+        <p data-ko="">• <strong>1박</strong> — 바스타올 2 · 페이스타올 4<br>• <strong>2박</strong> — 기본 세트 + 페이스타올 2개<br>• <strong>3박</strong> — 기본 세트 2개<br>• <strong>4박 이상</strong> — 별도 문의<br>타올은 투숙 박수에 맞춰 체크인 전 세팅됩니다. 추가: 페이스 3,000원 · 바스 5,000원 (별도 문의)</p>
+        <p data-en="" style="display:none">• <strong>1 night</strong> — 2 bath · 4 face towels<br>• <strong>2 nights</strong> — standard set + 2 face towels<br>• <strong>3 nights</strong> — 2 standard sets<br>• <strong>4+ nights</strong> — please contact us<br>Towels are pre-set before check-in. Extra: face ₩3,000 · bath ₩5,000 (please contact us)</p>
+        <p data-zh="" style="display:none">• <strong>1晚</strong> — 浴巾2条・面巾4条<br>• <strong>2晚</strong> — 基本套装 + 面巾2条<br>• <strong>3晚</strong> — 2套基本套装<br>• <strong>4晚以上</strong> — 请咨询<br>毛巾将在入住前按天数配置。额外：面巾3,000韩元 · 浴巾5,000韩元（请咨询）</p>
+        <p data-ko="">요금 기준 인원은 2인이며, 추가 침구는 <strong>30,000원</strong>(이불만 제공)입니다.</p>
+        <p data-en="" style="display:none">Base occupancy is 2 guests. Extra bedding is <strong>KRW 30,000</strong> (blanket only).</p>
+        <p data-zh="" style="display:none">基准入住人数为2人，加床<strong>30,000韩元</strong>(仅提供被子)。</p>
+      </div>
+    </details>
+
+    <details class="det">
+      <summary><span data-ko="">청결 · 편의 · 금연</span><span data-en="">Cleanliness · Comfort · No smoking</span><span data-zh="">清洁 · 便利 · 禁烟</span></summary>
+      <div class="det-body kw">
+        <p data-ko="">화장실 휴지는 꼭 <strong>휴지통</strong>에 넣어 주세요. 퇴실 시 쓰레기는 <strong>현관 쪽으로 모아</strong> 주시면 정비에 큰 도움이 됩니다.</p>
+        <p data-en="" style="display:none">Please put toilet paper in the <strong>trash bin</strong>, and <strong>gather trash near the entrance</strong> before check-out.</p>
+        <p data-zh="" style="display:none">卫生纸请务必丢入<strong>垃圾桶</strong>，退房时请将垃圾<strong>集中放在玄关附近</strong>。</p>
+        <p data-ko=""><strong>전자레인지</strong>는 1층 편의점(세븐일레븐) 후문 방향에 있습니다. 환경정책에 따라 일회용 칫솔·면도기·빗·휴대폰 충전기는 제공되지 않습니다.</p>
+        <p data-en="" style="display:none">The <strong>microwave</strong> is at the 1F convenience store (7-Eleven), rear entrance. Disposable toothbrushes, razors, combs and phone chargers are not provided.</p>
+        <p data-zh="" style="display:none"><strong>微波炉</strong>位于1楼便利店(7-Eleven)后门方向。不提供一次性牙刷、剃须刀、梳子和手机充电器。</p>
+        <div class="w" data-ko="">모든 객실과 <strong>전 구역(발코니 포함)</strong>은 금연입니다. 위반 시 클리닝 실비를 정산하며, 금액은 <strong>최대 30만원</strong>입니다. 비품 파손·분실, 침구·매트리스 오염은 실비가 청구됩니다.</div>
+        <div class="w" data-en="" style="display:none">All rooms and <strong>all areas including balconies</strong> are non-smoking; smoking is charged a cleaning fee at actual cost, up to <strong>KRW 300,000</strong>. Damage, loss or staining of bedding/mattress is charged at actual cost.</div>
+        <div class="w" data-zh="" style="display:none">所有客房及<strong>全部区域(含阳台)</strong>禁烟，违者按实际清洁费用结算，最高<strong>30万韩元</strong>。用品损坏、遗失或床品床垫污损按实际费用赔偿。</div>
+      </div>
+    </details>
+
+    <details class="det">
+      <summary><span data-ko="">짐 보관</span><span data-en="">Luggage storage</span><span data-zh="">行李寄存</span></summary>
+      <div class="det-body kw">
+        <p data-ko="">짐은 <strong>1층 로비 공용공간</strong>에 보관하실 수 있습니다. 체크인 전이나 체크아웃 후에도 이용 가능합니다. 일찍 도착하셔도 객실 번호는 체크인 완료 후 15:30부터 순차 발송됩니다.</p>
+        <p data-en="" style="display:none">Luggage may be stored in the <strong>1F lobby common area</strong>, before check-in and after check-out. Even if you arrive early, room codes are sent in order from 3:30 PM after check-in.</p>
+        <p data-zh="" style="display:none">行李可寄存于<strong>1楼大堂公共区域</strong>，入住前及退房后均可使用。即使提前到达，房间密码也要在办理入住后从15:30起陆续发送。</p>
+        <div class="w" data-ko="">공용공간이므로 <strong>귀중품은 직접 소지</strong>해 주세요. 분실·도난 책임은 호텔에서 부담하지 않습니다.</div>
+        <div class="w" data-en="" style="display:none">It is a shared space — <strong>keep valuables with you</strong>. The hotel is not responsible for loss or theft.</div>
+        <div class="w" data-zh="" style="display:none">此为公共空间，请<strong>随身携带贵重物品</strong>。酒店对遗失或被盗不承担责任。</div>
+      </div>
+    </details>
+  </section>
+
+  <section class="sec" aria-label="contact">
+    <div class="mono sec-label">Contact</div>
+    <h2 class="sec-title kw"><span data-ko="">문의</span><span data-en="">Contact us</span><span data-zh="">咨询</span></h2>
+    <p class="con-hours"><span data-ko="">운영시간 09:00 – 20:00 (매일)</span><span data-en="">Hours: 09:00 – 20:00 (Daily)</span><span data-zh="">营业时间 09:00 – 20:00（每日）</span></p>
+    <div class="con-grid">
+      <a class="con-card hl" href="https://hotel-around-sokcho-chatbot-frontend.pages.dev" target="_blank" rel="noopener">
+        <div class="con-label"><span data-ko="">AI 챗봇</span><span data-en="">AI Chatbot</span><span data-zh="">AI聊天机器人</span><span class="badge"><span data-ko="">추천</span><span data-en="">Best</span><span data-zh="">推荐</span></span></div>
+        <div class="con-val"><span data-ko="">실시간 채팅 · 즉시 답변</span><span data-en="">Live chat · Instant answers</span><span data-zh="">实时聊天 · 即时回复</span></div>
+      </a>
+      <a class="con-card" href="tel:033-800-8899"><div class="con-label"><span data-ko="">전화</span><span data-en="">Phone</span><span data-zh="">电话</span></div><div class="con-val">033-800-8899</div></a>
+      <a class="con-card" href="https://open.kakao.com/o/shUYSeFi" target="_blank" rel="noopener"><div class="con-label">KakaoTalk</div><div class="con-val"><span data-ko="">1:1 채팅 상담</span><span data-en="">1:1 chat</span><span data-zh="">1:1在线咨询</span></div></a>
+      <a class="con-card" href="https://wa.me/821042820392" target="_blank" rel="noopener"><div class="con-label">WhatsApp</div><div class="con-val">+82-10-4282-0392</div></a>
+      <a class="con-card" href="mailto:hotelaroundsokcho@gmail.com"><div class="con-label">Email</div><div class="con-val">hotelaroundsokcho@gmail.com</div></a>
+    </div>
+    <a class="swap" href="./"><span data-ko="">호텔 소개 · 도착 전 안내 다시 보기 →</span><span data-en="">Review the hotel intro &amp; pre-arrival notes →</span><span data-zh="">再次查看酒店介绍与到达前须知 →</span></a>
+  </section>
+</main>
+
+<footer>HotelAround Sokcho</footer>
+
+<div class="fab-wrap">
+  <a class="fab kakao" href="https://open.kakao.com/o/shUYSeFi" target="_blank" rel="noopener"><span data-ko="">1:1 문의</span><span data-en="">Chat</span><span data-zh="">咨询</span></a>
+</div>
+
+<script>/* 체크인 버튼 주소 자동 전환: DEV(hotel-guide-dev)·로컬 미리보기는 checkin-dev, 그 외(PROD)는 기존 체크인 주소 */
+(function(){var d=false;try{d=/hotel-guide-dev/i.test(location.pathname)||location.hostname==="localhost"||location.hostname==="127.0.0.1"||location.protocol==="file:";}catch(e){}if(!d)return;var a=document.getElementById("checkinBtn");if(!a)return;var u="https://hotelaroundsokcho.github.io/hotel-checkin/checkin-dev.html";a.setAttribute("data-base",u);a.setAttribute("href",u);})();</script>
+<script src="guide.js"></script>
+</body>
+</html>
